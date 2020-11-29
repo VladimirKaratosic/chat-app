@@ -8,6 +8,11 @@
   scrollbar-width: none;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
 body {
   margin: 0;
   @include font-style;
@@ -16,4 +21,21 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:focus {
+  outline: none;
+  border: none;
+}
+
+::placeholder {
+  @include placeholder-style;
+}
+
+:-ms-input-placeholder {
+  @include placeholder-style;
+}
+
+::-ms-input-placeholder {
+  @include placeholder-style;
 }
