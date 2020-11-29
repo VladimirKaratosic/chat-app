@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+# Chat App with React and NodeJS/Express/Socket.io 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### About:
 
-In the project directory, you can run:
+This is a real-time chat application built using React (Create React App on the frontend) and NodeJS/Express/Socket.io (on the Backend).
 
-### `yarn start`
+## Table of contents
+* [Technologies](#Technologies)
+* [Screenshots](#Screenshots)
+* [Software](#Software)
+* [Useful links](#Useful)
+* [Getting started](#Getting)
+* [Download & Install Dependencies on your machine](#Download)
+* [Lunch_the_backend](#Lunch_the_backend)
+* [Lunch_the_frontend](#Lunch_the_frontend)
+* [Contact](#Contact)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Technologies:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* NodeJS/Express
+* SOCKET.IO
+* React (Create React App)
+* React Router
+* SASS
+* React scroll to bottom
 
-### `yarn test`
+### Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center">
+    <img src="/git_images/Login_Screenshot.png">  
+</p>
+<br />
+<br />
+<p align="center">
+    <img src="/git_images/Chat_Screenshot.png">  
+</p>
 
-### `yarn build`
+## Software 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Before proceeding, please ensure you have the following software installed on your computer.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Node
+* Yarn (optional but recommended)
+* Git command line tools
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Useful-links
 
-### `yarn eject`
+* Download Git CLT - Windows: https://git-scm.com/download/windows Mac: https://git-scm.com/download/mac
+* Download Node - https://nodejs.org/en/
+* Download Yarn CLT - https://yarnpkg.com/lang/en/docs/install/
+* Download VSCode - https://code.visualstudio.com/
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Getting-started
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Please fork a copy of this repository. Forking a repository allows you to freely experiment with changes without affecting the original project. Alternatively download or clone the master branch.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Download & Install Dependencies on your machine 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Clone the repo to your machine 
 
-## Learn More
+```
+git clone <CloneURL>
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Lunch_the_backend
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1)	Within terminal or cmd ensure you have navigated inside the 'server' directory and installed the dependencies
 
-### Code Splitting
+```
+cd <../path/to/server> 
+yarn install OR npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2) Run the start script
 
-### Analyzing the Bundle Size
+``` 
+yarn run start OR npm run start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Lunch_the_frontend
 
-### Making a Progressive Web App
+1) Open a new terminal window and navigate inside the 'chat-app' folder, or the app Root as you will need to keep the backend running in the background
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+cd <../path/to/chat-app> 
+yarn install OR npm install
+```
 
-### Advanced Configuration
+2) Run the start script
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+``` 
+yarn run start OR npm run start
+```
 
-### Deployment
+Your app should be running on: http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contact
+Created by [Vladimir Karatosic] - feel free to contact me!
 
-### `yarn build` fails to minify
+You can visit my [GitHub] page and see the rest of my projects.
+If you like it, give me the Star. Thanks!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Vladimir Karatosic]:http://vladimirkaratosic.com
+[GitHub]:https://github.com/VladimirKaratosic
