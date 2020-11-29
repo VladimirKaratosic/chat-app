@@ -1,0 +1,75 @@
+@import '../../styles/base/variables';
+@import '../../styles/base/mixins';
+
+.messagebox_wrapper,
+.typing_wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 640px;
+  padding: 0 24px;
+}
+
+.typing_wrapper {
+  height: 100%;
+}
+
+.message-area {
+  height: calc(100vh - 75px);
+  overflow: auto;
+}
+
+.typing-area {
+  height: 75px;
+  padding: 8px 0;
+  background-color: $blue-bg-color;
+}
+
+.form {
+  width: 100%;
+  @include flex;
+  align-items: center;
+  height: 100%;
+}
+
+.input_field {
+  height: 48px;
+  background-color: $white-color;
+  border-radius: 5px;
+  border: 2px solid $blue-border;
+  color: $blue-border;
+  padding: 0 5px;
+  margin-right: 8px;
+  width: calc(100% - 68px - 8px);
+  font-size: 15px;
+  letter-spacing: 0.6px;
+  @include font-style;
+  font-weight: 500;
+}
+
+.send_button {
+  height: 48px;
+  width: 68px;
+  background-color: $orange-color;
+  color: $white-color;
+  border: 0;
+  border-radius: 5px;
+  font-size: 15px;
+  letter-spacing: 0.6px;
+  @include font-style;
+  font-weight: 500;
+}
+
+.welcome_text {
+  color: $blue-bg-color;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .typing-area {
+    padding: 8px;
+
+    .wrapper {
+      padding: 0;
+    }
+  }
+}

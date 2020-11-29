@@ -1,0 +1,59 @@
+@import '../../styles/base/variables';
+@import '../../styles/base/mixins';
+
+.messagebox_wrapper>div {
+    height: auto;
+    @include flex;
+    flex-direction: column;
+    height: calc(100vh - 75px - 16px);
+    padding-top: 16px;
+}
+
+.message_box,
+.my_message_box {
+    padding: 16px;
+    border: 1px solid #d4dade;
+    border-radius: 5px;
+    margin: 0 0 16px;
+    max-width: 420px;
+}
+
+.msg_box:last-of-type {
+    margin-bottom: 0;
+}
+
+.message_box {
+    background: $white-color;
+}
+
+.my_message_box {
+    background: $yellow-bg-color;
+    align-self: flex-end;
+    @include flex;
+    flex-direction: column;
+}
+
+.author_text {
+    color: $light-gray-text;
+}
+
+.message_text {
+    color: $message-text;
+}
+
+.my_message_date {
+    color: $light-gray-text;
+    align-self: flex-end;
+}
+
+.others_message_date {
+    color: $light-gray-text;
+}
+
+@media (max-width: 800px) {
+
+    .message_box,
+    .my_message_box {
+        max-width: 240px;
+    }
+}
